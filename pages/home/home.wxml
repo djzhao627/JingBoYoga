@@ -1,0 +1,32 @@
+<view class="home-hd">
+  <!-- closeable 模式，在右侧显示关闭按钮 -->
+  <van-notice-bar mode="closeable" backgroundColor="#ECF9FF" color="#409DFB" left-icon="volume-o " text="[场馆公告]足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" />
+  <text>教练风采</text>
+  <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <!-- <view class="swiper-item {{item}}"></view> -->
+            <image src='{{item}}'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="van-ellipsis">这是一段宽度限制 250px 的文字，后面的内容会省略</view>
+
+<!-- 最多显示两行 -->
+<view class="van-multi-ellipsis--l2">这是一段最多显示两行的文字，后面的内容会省略</view>
+
+<!-- 最多显示三行 -->
+<view class="van-multi-ellipsis--l3 van-hairline--top">这是一段最多显示三行的文字，后面的内容会省略</view>
+  <view class="home">
+    <image class="home-logo" src="../../images/icon_home_HL.png"></image>
+    <view class="home-desc">场馆公告</view>
+    <view class="home-desc">教练风采</view>
+    <view class="home-desc">优选课程</view>
+    <view class="home-desc">精品活动</view>
+    <view class="home-desc">会员卡</view>
+
+    
+  </view>
+</view>

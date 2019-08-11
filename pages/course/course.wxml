@@ -1,0 +1,8 @@
+<view class="home-hd">
+    <view class="home">
+        <image class="home-logo" src="../../images/icon_course_HL.png"></image>
+        <view class="home-desc">我的课程</view>
+        <view class="home-desc">团课</view>
+        <view class="home-desc">私教课</view>
+    </view>
+</view>

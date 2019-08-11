@@ -1,0 +1,42 @@
+<view>
+  <!-- 已登录 -->
+  <view wx:if="{{hasLogin}}" class="content">
+    <image src='../../images/account_bg2.png' class='account_bg' />
+    <image src='../../images/logo.png' mode="widthFix" class='logo' />
+    <text class='username'>一碗蛋炒饭{{isLogin}}</text>
+    <view class='block'>
+      <view class="list-item" />
+      <van-row class='number'>
+        <van-col span="8">175CM</van-col>
+        <van-col span="8">65KG</van-col>
+        <van-col span="8">健康</van-col>
+      </van-row>
+      <van-row class='parameter'>
+        <van-col span="8">身高</van-col>
+        <van-col span="8">体重</van-col>
+        <van-col span="8">状况</van-col>
+      </van-row>
+      <view class="list-item" />
+    </view>
+    <view class='block'>
+      <view class="list-item"></view>
+      <van-cell title="我的预约" is-link />
+      <van-cell title="体检信息" is-link />
+      <van-cell title="我的积分" is-link />
+      <van-cell title="我的券包" is-link />
+      <van-cell title="我的会员卡" is-link />
+      <view class="list-item"></view>
+    </view>
+    <view class='block'>
+      <van-cell bindtap='logout' is-link title="退出登录" />
+    </view>
+    <van-dialog id="van-dialog" />
+  </view>
+  <!-- 未登录 -->
+  <view wx:if="{{!hasLogin}}" class="content-unlogin">
+    <image class="logo" mode="widthFix" src="../../images/logo.png" />
+    <view class="login_button" bindtap='login'>
+      登录
+    </view>
+  </view>
+</view>

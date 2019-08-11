@@ -1,0 +1,99 @@
+<view class="plan_main">
+    <!-- 顶部背景图 -->
+    <view class="top_bg">
+        <image wx:if="{{currentIndexNav === 0}}" src="../../images/plan_top_bg.png" mode="widthFix" />
+        <image wx:if="{{currentIndexNav === 1}}" src="../../images/plan_top_bg2.png" mode="widthFix" />
+    </view>
+    <!-- 导航 -->
+    <view class="nav_wrap">
+        <!-- 滚动区域组件 -->
+        <scroll-view class="nav" scroll-x="{{true}}">
+            <view bindtap="activeNav" data-index="{{index}}" class="nav_item {{index === currentIndexNav ? 'active' : ''}}" wx:for="{{navList}}" wx:key="{{index}}">
+                {{item.text}}
+            </view>
+        </scroll-view>
+    </view>
+
+    <!-- Tab:体质检测 -->
+    <view wx:if="{{currentIndexNav === 0}}">
+        <!-- 目标数据 -->
+        <view class="target_info">
+            <view class="item">
+                <view class="value">70KG</view>
+                <view class="name">目标体重</view>
+            </view>
+            <view class="item">
+                <view class="value">12KG</view>
+                <view class="name">体重控制</view>
+            </view>
+            <view class="item">
+                <view class="value">6KG</view>
+                <view class="name">脂肪控制</view>
+            </view>
+        </view>
+        <!-- 数据展示 -->
+        <view class="data_info">
+            <view class="info_row" wx:for="{{personalData}}" wx:key="{{index}}">
+                <view class="row_left">
+                    <image src="../../images/{{item.icon}}" mode="widthFix" />
+                </view>
+                <view class="row_right">
+                    <view class="base_info">
+                        <text class="name">{{item.name}}</text>
+                        <text class="value">{{item.value}}</text>
+                    </view>
+                    <view wx:if="{{item.des}}" class="desc">{{item.des}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- Tab:计划详情 -->
+    <view wx:if="{{currentIndexNav === 1}}">
+        <view class="plan_wrap">
+            <view class="plan_list">
+                <view class="plan_item"  wx:for="{{[0, 1, 2, 3, 4, 5, 6]}}" wx:key="{{index}}">
+                    <view class="item_left_type" wx:if="{{index % 2 === 0}}">
+                        <view class="item_left">
+                            <image src="../../images/plan_yoga_01.png" mode="widthFix" />
+                        </view>
+                        <view class="item_right">
+                            <text class="name">天鹅颈瑜伽</text>
+                            <view class="item_level">
+                                <text>等级: </text>
+                                <van-icon name="fire" color="red" size="0.5rem" />
+                                <van-icon name="fire" color="#ccc" size="0.5rem" />
+                                <van-icon name="fire" color="#ccc" size="0.5rem" />
+                                <van-icon name="fire" color="#ccc" size="0.5rem" />
+                                <van-icon name="fire" color="#ccc" size="0.5rem" />
+                            </view>
+                            <text class="value">今日任务已完成</text>
+                        </view>
+                    </view>
+                    <view class="item_right_type" wx:if="{{index % 2 !== 0}}">
+                        <view class="item_left">
+                            <text class="name">体态瑜伽 · 颈前倾缓解</text>
+                            <view class="item_level">
+                                <text>等级: </text>
+                                <van-icon name="fire" color="red" size="0.5rem" />
+                                <van-icon name="fire" color="red" size="0.5rem" />
+                                <van-icon name="fire" color="#ccc" size="0.5rem" />
+                                <van-icon name="fire" color="#ccc" size="0.5rem" />
+                                <van-icon name="fire" color="#ccc" size="0.5rem" />
+                            </view>
+                            <text class="value">今日任务尚未开始</text>
+                        </view>
+                        <view class="item_right">
+                            <image src="../../images/plan_yoga_02.png" mode="widthFix" />
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 图表展示 -->
+    <!-- <view class="container">
+        <canvas canvas-id="radarCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view> -->
+</view>

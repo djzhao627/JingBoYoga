@@ -1,0 +1,75 @@
+/* 已登录 */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account_bg {
+  width: 1050rpx;
+  height: 896rpx;
+  position: fixed;
+  z-index: -1;
+}
+
+.logo {
+  margin-top: 30rpx;
+  width: 300rpx;
+  box-shadow: 1rpx 1rpx 5rpx #3332;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.login_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150rpx;
+  width: 550rpx;
+  height: 100rpx;
+  border-radius: 44px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #ff4156;
+}
+
+.block {
+  width: 80%;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(12, 12, 12, 0.37);
+  overflow: hidden;
+}
+
+.list-item {
+  margin: 10px;
+}
+
+.block van-row van-col {
+  text-align: center;
+}
+
+.number {
+  font-size: 16px;
+  color: #333;
+}
+
+.parameter {
+  font-size: 15px;
+  color: #666;
+}
+
+.username {
+  color: white;
+  margin: 10px;
+  text-shadow: 1rpx 0rpx 15rpx #333;
+}
+
+/* 未登录 */
+.content-unlogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30% 0;
+}

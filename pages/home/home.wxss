@@ -1,0 +1,34 @@
+.home-hd {
+}
+
+.home-logo {
+  width: 86rpx;
+  height: 86rpx;
+}
+
+.home-desc {
+  margin-top: 10rpx;
+  color: #888;
+  font-size: 28rpx;
+}
+
+.page-section-title {
+  padding: 0;
+}
+
+.page-section-spacing {
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+
+.swiper {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.swiper-item {
+  border-radius: 5px;
+  display: block;
+  height: 150px;
+}
+

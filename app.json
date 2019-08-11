@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/plan/plan",
+    "pages/home/home",
+    "pages/me/me",
+    "pages/course/course",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#FF5F4F",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_HL.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/plan/plan",
+        "iconPath": "images/icon_plan.png",
+        "selectedIconPath": "images/icon_plan_HL.png",
+        "text": "计划"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "iconPath": "images/icon_course.png",
+        "selectedIconPath": "images/icon_course_HL.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/icon_me.png",
+        "selectedIconPath": "images/icon_me_HL.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-cell": "components/vant/cell/index",
+    "van-cell-group": "components/vant/cell-group/index",
+    "van-row": "components/vant/row/index",
+    "van-col": "components/vant/col/index",
+    "van-dialog": "components/vant/dialog/index",
+    "van-notice-bar": "components/vant/notice-bar/index",
+    "van-icon": "components/vant/icon/index"
+  }
+}

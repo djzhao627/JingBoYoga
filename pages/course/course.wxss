@@ -1,0 +1,15 @@
+.home-hd {
+    padding: 80rpx;
+    text-align: center;
+}
+
+.home-logo {
+    width: 86rpx;
+    height: 86rpx;
+}
+
+.home-desc {
+    margin-top: 10rpx;
+    color: #888888;
+    font-size: 28rpx;
+}
