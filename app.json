@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/plan/plan",
     "pages/home/home",
+    "pages/plan/plan",
     "pages/me/me",
     "pages/course/course",
     "pages/index/index",
@@ -10,7 +10,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FFF",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "静波瑜伽",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

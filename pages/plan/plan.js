@@ -7,7 +7,7 @@ Page({
    */
   data: {
     // 首页被选中的导航索引
-    currentIndexNav: 1,
+    currentIndexNav: 0,
     // 导航栏数据
     navList: [{
         "text": "体质检测",

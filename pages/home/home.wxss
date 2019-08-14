@@ -1,34 +1,161 @@
-.home-hd {
+.home {
+  background-color: #fff;
 }
 
-.home-logo {
-  width: 86rpx;
-  height: 86rpx;
+.title {
+  padding: 15rpx;
+  color: #666;
+  font-size: 0.9rem;
+  border-bottom: 1rpx solid #aaa5;
 }
 
-.home-desc {
-  margin-top: 10rpx;
-  color: #888;
-  font-size: 28rpx;
+/* 优选课程 */
+.recommend_class .class_item {
+    width: 100%;
 }
 
-.page-section-title {
-  padding: 0;
+.recommend_class .class_item image {
+  width: 100%;
 }
 
-.page-section-spacing {
-  box-sizing: border-box;
+/* 精品活动 */
+.activity {
   padding: 0 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.swiper {
-  text-align: center;
-  margin: 0 10px;
+.activity .activity_item {
+  width: 140rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.swiper-item {
-  border-radius: 5px;
-  display: block;
-  height: 150px;
+.activity_item image {
+  margin-top: 20rpx;
+  width: 80%;
 }
 
+.activity_item text {
+  color: #6a6a6a;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 5rpx 0 15rpx 0;
+}
+
+/* 教练风采 */
+.trainers scroll-view {
+  white-space: nowrap;
+  display: flex;
+}
+
+.trainer_item {
+  display: inline-block;
+  width: 350rpx;
+  height: 320rpx;
+  margin: 20rpx;
+  border-radius: 20rpx;
+  box-shadow: 3rpx 3rpx 15rpx #aaa;
+  overflow: hidden;
+}
+
+.trainer_item .item_top {
+  position: relative;
+}
+.trainer_item .item_top .top_bg {
+  width: 350rpx;
+  height: 160rpx;
+  border-bottom: 1rpx solid #aaa5;
+}
+
+.trainer_item .item_top .trainer_avator {
+  width: 100rpx;
+  border-radius: 50%;
+  box-shadow: 1rpx 1rpx 10rpx #6a6a6a;
+  position: absolute;
+  right: 20rpx;
+  top: 110rpx;
+}
+
+.trainer_item .item_bottom {
+  clear: both;
+  padding: 20rpx;
+}
+
+.trainer_item .item_bottom .trainer_name {
+  color: #111;
+}
+
+.trainer_item .item_bottom .trainer_desc::before {
+  clear: both;
+  content: " ";
+}
+
+.trainer_item .item_bottom .trainer_desc {
+  margin-top: 5rpx;
+  color: #6a6a6a;
+  font-size: 0.9rem;
+  width: 100%;
+  height: 2.1rem;
+}
+
+/* 会员卡 */
+.member_card {
+  margin-bottom: 20rpx;
+}
+.member_card scroll-view {
+  white-space: nowrap;
+  display: flex;
+}
+
+.member_card .card_item {
+  position: relative;
+  display: inline-block;
+  width: 400rpx;
+  height: 250rpx;
+  margin: 20rpx;
+  border: 1rpx solid #f7d6a9;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 1rpx 1rpx 10rpx #cccc;
+}
+
+.member_card .card_item .item_bg {
+  width: 100%;
+  position: absolute;
+}
+
+.card_item .item_content {
+  position: absolute;
+  height: 100%;
+}
+
+.item_content .vip_label {
+  width: 80rpx;
+}
+
+.item_content .title {
+  color: #666;
+  margin: 10rpx;
+}
+
+.item_content .more_info {
+  position: absolute;
+  left: 15rpx;
+  bottom: 15rpx;
+  color: #aaa;
+  text-shadow: 0 0 10rpx #fff;
+  font-size: 0.8rem;
+}
+
+.item_content .more_info .level {
+  margin-left: 20rpx;
+}
+
+.item_content .more_info .level_desc {
+  font-size: 0.4rem;
+  margin-left: 18rpx;
+}
